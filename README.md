@@ -1,4 +1,4 @@
-## Personal Website
+# Personal Website
 
 It's a single page application that holds information about myself, my various projects that I can talk about, and a way to contact me. This was my challenge to understand ES6 in a practical way and start using a modern framework, like React.
 
