@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Wrapper from '../../Wrapper/Wrapper';
 import { urlFor, client } from '../../client';
+import MotionWrapper from '../../MotionWrapper/MotionWrapper';
 import './About.scss';
 
 const About = () => {
@@ -13,9 +14,9 @@ const About = () => {
     const query = '*[_type == "abouts"]';
 
     client.fetch(query)
-    .then((data)=> setAbouts(data));
+      .then((data) => setAbouts(data));
   }, [])
-  
+
   return (
     <>
       <h2 className="head-text">I know that <span>Good Development </span><br /> means<span> Good Business</span></h2>
@@ -44,4 +45,7 @@ const About = () => {
   )
 }
 
-export default Wrapper(About, 'about')
+export default Wrapper(
+  MotionWrapper(About, 'app__about'),
+  'about', 'app__whitebg'
+  )
