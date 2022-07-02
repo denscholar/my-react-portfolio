@@ -11,7 +11,8 @@
     align-items: center;
     flex-wrap: wrap;
 
-    margin: 2rem 0 2rem;
+
+    margin: 2rem auto;
 
     .app__work-filter-item{
         padding: 0.5rem 1rem;
@@ -39,6 +40,11 @@
         background-color: var(--secondary-color);
         color: #fff;
     }
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+        
+    }
+
 }
 
 .app__work-portfolio{

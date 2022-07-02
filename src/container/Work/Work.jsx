@@ -4,6 +4,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { urlFor, client } from '../../client';
 import { motion } from 'framer-motion';
 import './Work.scss';
+import MotionWrapper from '../../MotionWrapper/MotionWrapper';
 
 const Work = () => {
 
@@ -18,7 +19,6 @@ const Work = () => {
 
     client.fetch(query)
       .then((data) => {
-        console.log(data)
         setWorks(data);
         setFilterWork(data)
       });
@@ -42,7 +42,7 @@ const Work = () => {
   }
   return (
     <>
-      <h2 className='head-text' style={{ marginTop: 20 }}>My creative Portfolio</h2>
+      <h2 className='head-text' style={{ marginTop: '100px' }}>My creative Portfolio</h2>
 
       <div className='app__work-filter'>
         {['UI/UX', 'REACT.JS', 'Data analytics', 'WordPress', 'All'].map((item, index) => (
@@ -108,4 +108,7 @@ const Work = () => {
   )
 }
 
-export default Wrapper(Work, 'work')
+export default Wrapper(
+  MotionWrapper(Work, 'app__works'),
+  'work', 'app__primarybg'
+  )
