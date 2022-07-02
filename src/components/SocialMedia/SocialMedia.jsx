@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF } from 'react-icons/fa';
+import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 
 
@@ -13,9 +13,9 @@ const SocialMedia = () => {
                 <a href="https://www.linkedin.com/in/dennisakagha/" target='_blank' rel="noreferrer"><AiFillLinkedin/></a>
                 
             </div>
-            {/* <div>
-                <FaFacebookF/>
-            </div> */}
+            <div>
+                <a href="https://github.com/denscholar" target='_blank' rel="noreferrer"><AiFillGithub/></a>
+            </div>
         </div>
     )
 }
