@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-// import logo from '../../assets/assets/logo-me1.png';
+import logo from '../../assets/assets/logo-me1.png';
 import CancelPresentationOutlinedIcon from '@mui/icons-material/CancelPresentationOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import { motion } from 'framer-motion';
@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav className='app__navbar'>
             <div className='app__navbar-logo'>
-                {/* <img src={logo} alt="logo" /> */}
+                <img src={logo} alt="logo" />
             </div>
             <ul className='app__navbar-links'>
                 {['home', 'about', 'work', 'skill', 'contact'].map((item) => (
