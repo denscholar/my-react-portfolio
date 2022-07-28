@@ -10,8 +10,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
-
+    min-width: 51% !important;
     margin: 2rem auto;
 
     .app__work-filter-item{

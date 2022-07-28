@@ -45,7 +45,7 @@ const Work = () => {
       <h2 className='head-text' style={{ marginTop: '100px' }}>My creative Portfolio</h2>
 
       <div className='app__work-filter'>
-        {['UI/UX', 'REACT.JS', 'Data analytics', 'WordPress', 'All'].map((item, index) => (
+        {['JavaScript', 'REACT.JS', 'Data Analytics', 'WordPress', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWordFilter(item)}

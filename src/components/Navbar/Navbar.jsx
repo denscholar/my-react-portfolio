@@ -31,7 +31,7 @@ const Navbar = () => {
                     >
                         <CancelPresentationOutlinedIcon onClick={() => setToggle(false)} />
                         <ul>
-                            {['home', 'about', 'testimonial', 'work', 'skill', 'contact'].map((item) => (
+                            {['home', 'about', 'work', 'skill', 'contact'].map((item) => (
                                 <li key={item}>
                                     <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                                 </li>
